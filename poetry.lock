@@ -88,16 +88,27 @@ MarkupSafe = ">=2.1.1"
 [package.extras]
 watchdog = ["watchdog (>=2.3)"]
 
+[[package]]
+name = "gunicorn"
+version = "20.1.0"
+description = "Python WSGI HTTP Server for UNIX"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
 content-hash = "d7a65ba75d9fd1d70398a76955d93d28129b8c09a3b56e10fef71ce427090c8b"
+
 
 [metadata.files]
 blinker = []
 click = []
 colorama = []
 flask = []
+gunicorn=[]
 itsdangerous = []
 jinja2 = []
 markupsafe = []
