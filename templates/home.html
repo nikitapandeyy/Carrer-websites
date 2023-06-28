@@ -26,9 +26,9 @@
         text-align:center;
       }
       .bodytext {
-        font-size:30px;
+        font-size:20px;
         font-family:Roboto;
-        font-weight:normal;
+        
         color: rgb(60,60,50);
         text-align:center; 
       }
@@ -44,35 +44,38 @@
   </head>
   <body> 
       {% include "nav.html" %}
-      <h1>{{company_name}} CAREER
+      <h1> XYZ CAREER
       </h1>
       <img id="banner" src="https://carrer-websites--nikitapandey9.repl.co/static/banner.jpg" >
       <div id="container">
        <h2 class="text-center mt-2 mb-4">ABOUT
       </h2>
-        <div class="row" style="margin-bottom:16px;">
+        <div class="row" style="margin-bottom:32px;">
           <div class="col-md-6">
-      <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+      <p class="bodytext">At XYZ, we’re on a mission to build the most highly reputed technical university in the world, and we’re building it completely online. Our flagship data science program helps working professionals with a background in programming or analytics make a career transition to data science. We also offer several free beginner-friendly courses and have a fast-growing community of 200,000+ users.</p>
+          </div>
           <div class="d-none d-md-block col-md-6">
-          <img src="static/people.jpg" style="height:320px;border-radius:4px;">
+            <img src="static/people.jpg" style="height:320px;border- 
+                    radius:4px;">
           </div>
           
         </div>
           
       
       <h2 class="text-center mt-2 mb-4">open positions</h2>
-      <p class="bodytext">
+      
       <div>
         {% for job in jobs %}
           {% include "jobitem.html" %}
         {% endfor %}
       </div>
-      </p><div style="text-align:center;" >
+      <div class="text-center" >
        
-      <button class="btn btn-primary btn-lg">contact us</button></div>
-   
-    </body>
+      <a class="btn btn-primary btn-lg" href="mailto:nikitapandey1020@gmail.com">contact us</a>
+      </div>
+
+    </div>
     {% include "footer.html" %}
-  </head>
+  </body>
+  
 </html> 
