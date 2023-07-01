@@ -15,9 +15,10 @@
       <p class="lead mt-0">{{job.location}}</p>
       <h4>Responsibilities</h4>
       <ul>
-        {% for line in job.responsibities.split("\n") %}
-         <li>{{line}}</li> 
-        {% endfor %}
+        {% for line in job.responsibilities.split("\n") %}
+    <li>{{ line }}</li>
+{% endfor %}
+
       </ul>
       <h4>Requirements</h4>
       <ol>
