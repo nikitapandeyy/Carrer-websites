@@ -36,7 +36,7 @@ To run this project locally, follow these steps:
 3. Set up your database connection string in the environment variable `DB_CONN_STRING`.
 4. Start the development server: `python main.py`
 5. Open your web browser and access the application at `http://localhost:5000`.
-
+   #comment
 ## Contributing
 
 Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
